@@ -32,7 +32,7 @@ public class Main {
             }
         }
 
-        // testing branches
+        // should be for the actual timer branch, i did it wrong like a fucking idiot
         long finalTotal = 0;
         for(long total: totals){
             finalTotal += total;
