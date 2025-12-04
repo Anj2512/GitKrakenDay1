@@ -32,6 +32,7 @@ public class Main {
             }
         }
 
+        // testing branches commit
         long finalTotal = 0;
         for(long total: totals){
             finalTotal += total;
