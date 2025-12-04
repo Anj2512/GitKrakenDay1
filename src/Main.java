@@ -3,5 +3,17 @@
 public class Main {
     public static void main(String[] args) {
         Thread[] threads = new Thread[1000];
+
+        long total = 0;
+        for (int i = 0; i < threads.length; i++) {
+            threads[i] = new Thread(new Runnable(){
+                public void run() {
+                    long sum = 0;
+                    for(int j = 1; j <= 1000000; j++){
+                        sum += j;
+                    }
+                }
+            });
+        }
     }
 }
