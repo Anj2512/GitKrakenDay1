@@ -9,7 +9,7 @@ public class Main {
             threads[i] = new Thread(new Runnable(){
                 public void run() {
                     long sum = 0;
-                    for(int j = 1; j <= 1000000; j++){
+                    for(int j = 1; j <= 1000000; j++) {
                         sum += j;
                     }
                 }
