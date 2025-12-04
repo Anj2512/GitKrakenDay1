@@ -32,5 +32,9 @@ public class Main {
             }
         }
 
+        long finalTotal = 0;
+        for(long total: totals){
+            finalTotal += total;
+        }
     }
 }
