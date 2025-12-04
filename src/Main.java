@@ -19,5 +19,18 @@ public class Main {
                 }
             });
         }
+
+        // how to join each thread to the main thread
+        for(Thread thread : threads) {
+            thread.start();
+        }
+        for(Thread thread : threads) {
+            try {
+                thread.join();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+
     }
 }
