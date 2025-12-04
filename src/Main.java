@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Thread[] threads = new Thread[1000];
 
-        long isd = 0;
+        long startTime = System.currentTimeMillis();
         long[] totals  = new long[1000];
         for (int i = 0; i < threads.length; i++) {
             final int index = i; // needed for inner classes
@@ -36,5 +36,8 @@ public class Main {
         for(long total: totals){
             finalTotal += total;
         }
+        long endTime = System.nanoTime();
+        long duration = endTime - startTime;
+        System.out.println("Total execution time: "+duration/1000000000.0+"sec");
     }
 }
