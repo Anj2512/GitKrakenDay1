@@ -30,7 +30,7 @@ public class Main {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-        }
+        }//
 
         // should be for the actual timer branch, i did it wrong like a fucking idiot
         long finalTotal = 0;
